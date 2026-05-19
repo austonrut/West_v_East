@@ -188,4 +188,5 @@ write.csv(dmrs_West_v_East,"West_v_East_filtdmrs_all_0.05.csv", row.names = FALS
 
 ### Other Analysis
 From there I can take these outputs and generate a list of DMR genomic location and methylation levels that can be used for heatmaps and identification of genes
+
 `cat Coos_V_SS_filtdmrs_all_0.05.csv | sed -E 's/,/\t/g' | awk '{print $1"_"$2"_"$3 "\t" $6 "\t" $7}' | sed -E 's/"//g' | sed -E 's/meanMethy1/Coos_Meth/'| sed -E 's/meanMethy2/SS_Meth/'>Coos_SS_pairwisedmrs.tsv`
