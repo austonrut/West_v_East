@@ -47,14 +47,14 @@ dml_CA_v_NH= DMLtest(bss.f, group1=c("CRB1","CRB2","CRB3","CRB5","CRB6","CRB8"),
                      group2 = c("NH1","NH2","NH3","NH4","NH5","NH6","NH7","NH8"))`
 
 ##### Newport v East
-dml_NW_v_MA = DMLtest(bss.f, group1=c("NW2","NW3","NW4","NW6","NW7","NWA"), 
+`dml_NW_v_MA = DMLtest(bss.f, group1=c("NW2","NW3","NW4","NW6","NW7","NWA"), 
                       group2 = c("MA1","MA2","MA3","MA4","MA5","MA6","MA7","MA8"))
 
 dml_NW_v_ME= DMLtest(bss.f, group1=c("NW2","NW3","NW4","NW6","NW7","NWA"),
                      group2 = c("ME1","ME2","ME3","ME4","ME5","ME6","ME7","ME8"))
 
 dml_NW_v_NH= DMLtest(bss.f, group1=c("NW2","NW3","NW4","NW6","NW7","NWA"),
-                     group2 = c("NH1","NH2","NH3","NH4","NH5","NH6","NH7","NH8"))
+                     group2 = c("NH1","NH2","NH3","NH4","NH5","NH6","NH7","NH8"))`
 
 ##### Coos vs East
 `dml_Coos_v_MA = DMLtest(bss.f, group1=c("CoosA","Coosb","CoosE","CoosF","CoosI","CoosJ"), 
