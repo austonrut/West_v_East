@@ -29,12 +29,14 @@ I used [f5c](https://github.com/hasindu2008/f5c) for calling methylation. First,
 `module load f5c
 f5c index --slow5 ../slow5/bc01.all.blow5 ./barcode01.meth/NH_1_bc01.fastq`
 
-...and then aligned to the genome. 
+...and then aligned to the genome.
+
 `module load minimap2
 module load samtools
 minimap2 -a -x ava-ont uk_jaNemVect1.1_genomic.fna barcode01.meth/CoosBay_A_bc01.fastq | samtools sort -T tmp -o merge.test1.ukbc01.sorted.bam
 samtools index merge.test1.ukbc01.sorted.bam`
 
 Then can call methylation and get methylation frequency
+
 `f5c call-methylation --slow5 ../../slow5/bc02.all.blow5 -b merge.NH2.ukbc02.sorted.bam -g ../../../West/methylation/uk_jaNemVect1.1_genomic.fna -r NH_2_bc02.fastq > ./NH2_bc02_methcall.tsv
 f5c meth-freq -i barcode02.meth/NH2_bc02_methcall.tsv > barcode02.meth/NH2_bc02_methfreq.tsv`
